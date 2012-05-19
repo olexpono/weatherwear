@@ -2,8 +2,35 @@
 <html>
 <head>
     <title>What to wear?</title>
+    <script type="text/javascript"
+        src="static/javascript/jquery-1.7.2.min.js"></script>
+    <script type="text/javascript" src="http://use.typekit.com/xqd1iob.js"></script>
+    <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+    <link rel="stylesheet" href="static/css/reset.css">
+    <link rel="stylesheet" href="static/css/style.css">
 </head>
 <body>
+  <div id="main">
     <h1>What to wear?</h1>
+    <h2 id="all_the_output"></h2>
+    <script type="text/javascript" src="static/javascript/getweather.js"></script>
+    <div id="settings">
+        <form id="settings_form" method="get" action="/">
+            <p id="validation"></p>
+            <fieldset>
+            <legend>Sweatshirt Preferences</legend>
+            <label for="bottom_c">Wearing sweatshirts above this temp:
+                <strong id="bottom_cutoff_display"></strong>
+            </label>
+            <input type="range" name="bottom_c" id="bottom_c" min="32" max="85" />
+            <label for="top_c">Too hot for sweatshirts:
+                <strong id="top_cutoff_display"></strong>
+            </label>
+            <input type="range" name="top_c" id="top_c" min="60" max="100" />
+            <input type="submit" value="Submit!" />
+            </fieldset>
+        </form>
+    </div>
+  </div>
 </body>
 </html>
