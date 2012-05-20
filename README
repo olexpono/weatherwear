@@ -1,0 +1,4 @@
+Simple one-page flask app that lets you set a temperature range for when you want to wear a sweatshirt.
+
+Flask (Python) / Basic JS / cookies / wunderground API / JQuery
+
